@@ -1,0 +1,10 @@
+REPOSITORY                                                          TAG                         IMAGE ID       CREATED        SIZE
+devopsdockeruh/simple-web-service                                   ubuntu                      4e3362e907d5   2 years ago    83MB
+devopsdockeruh/simple-web-service                                   alpine                      fd312adc88e0   2 years ago    15.7MB
+
+Both the two images are successfully pulled from the Docker hub registry. The size of simple-web-service:alpine is much smaller than the size of simple-web-service:ubuntu image.
+
+Commands(s) for getting inside the alpine container:
+   1. docker pull devopsdockeruh/simple-web-service:alpine
+   2. docker run -it -d --name ex5 devopsdockeruh/simple-web-service:alpine
+   3. docker exec -it ex5 sh
