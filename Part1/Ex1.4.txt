@@ -1,0 +1,7 @@
+Start a Ubuntu image with a process:
+   docker run --name ex4 ubuntu sh -c "while true; do echo 'Input website:'; read website; echo 'Searching..'; sleep 1; curl http://$website; done"
+Access inside the Ubuntu container:
+   docker exec -it ex4 bash
+Indside the container, type the following Command(s):
+   1. apt-get update
+   2. apt-get install -y curl
