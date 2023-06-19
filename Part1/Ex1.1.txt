@@ -1,0 +1,4 @@
+CONTAINER ID   IMAGE      COMMAND                  CREATED              STATUS                          PORTS     NAMES
+c6872fa403d9   postgres   "docker-entrypoint.s…"   About a minute ago   Exited (1) About a minute ago             sad_tharp
+3b119592937e   httpd      "httpd-foreground"       2 minutes ago        Up 2 minutes                    80/tcp    inspiring_goldwasser
+a9452fb36722   nginx      "/docker-entrypoint.…"   4 minutes ago        Exited (0) 38 seconds ago                 compassionate_chebyshev
