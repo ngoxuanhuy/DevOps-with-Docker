@@ -1,0 +1,6 @@
+The Dockerfile contains two lines only:
+	FROM devopsdockeruh/simple-web-service:alpine
+	CMD ["server"]
+
+Then the command I use to build a new container with tag "web-server" is:
+	docker build -t web-server .
