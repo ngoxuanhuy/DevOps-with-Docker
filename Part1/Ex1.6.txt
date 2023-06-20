@@ -1,0 +1,6 @@
+When searching for an input of the docker image `devopsdockeruh/pull_exercise`, I found the input is: basics
+Then I run the command:
+	docker run -it devopsdockeruh/pull_exercise
+And I type in the input: basics.
+I finally found the secret message is:
+	"This is the secret message"
