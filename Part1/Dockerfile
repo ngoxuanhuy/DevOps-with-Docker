@@ -1,4 +1,9 @@
-# Use the base image simple-web-service:alpine
-FROM devopsdockeruh/simple-web-service:alpine
+FROM openjdk:8
 
-CMD ["server"]
+WORKDIR /spring-project
+
+COPY . .
+
+RUN chmod 700 mvnw && ./mvnw package
+
+ENTRYPOINT ["java", "-jar", "./target/docker-sample-1.1.3.jar"]
