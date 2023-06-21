@@ -1,9 +1,15 @@
-FROM openjdk:8
+FROM node:16.17.1-alpine3.15
 
-WORKDIR /spring-project
+WORKDIR /front-end
+
+EXPOSE 5000
 
 COPY . .
 
-RUN chmod 700 mvnw && ./mvnw package
+RUN npm install
 
-ENTRYPOINT ["java", "-jar", "./target/docker-sample-1.1.3.jar"]
+RUN npm run build
+
+RUN npm install -g serve
+
+ENTRYPOINT ["serve", "-s", "-l", "5000", "build"]
