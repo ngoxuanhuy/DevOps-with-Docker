@@ -1,0 +1,10 @@
+1. Dockerfile:
+	FROM golang:1.16.15
+	WORKDIR /server
+	COPY . .
+	RUN go build
+	CMD ["./server"]
+
+2. Command(s):
+	docker build . -t server
+	docker run -d -p 8080:8080 server
