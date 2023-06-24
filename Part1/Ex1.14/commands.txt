@@ -1,0 +1,8 @@
+* Build the front-end project:
+     docker build . -t front-end
+* Run the front-end project:
+     docker run -d -p 5000:5000 front-end
+* Build the back-end project:
+     docker build . -t back-end
+* Run the back-end project:
+     docker run -d -p 8080:8080 back-end
