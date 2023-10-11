@@ -1,5 +1,7 @@
+# Import the base image golang version 1.16
 FROM golang:1.16
 
+# Add the working directory with name 'server'
 WORKDIR /server
 
 EXPOSE 8080
